@@ -106,7 +106,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 100, 60));
 
         jButton34.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jButton34.setText("÷");
+        jButton34.setText("/");
         getContentPane().add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 100, 60));
 
         jButton35.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
