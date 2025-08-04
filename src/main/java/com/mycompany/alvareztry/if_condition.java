@@ -47,7 +47,10 @@ public class if_condition extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        //declare for input
         int age = Integer.parseInt(txt.getText());
+        //fix value variable
         if(age > 18 && age <= 100)
         {
          JOptionPane.showMessageDialog(null, "Able to Vote", "VOTING", JOptionPane.INFORMATION_MESSAGE);
