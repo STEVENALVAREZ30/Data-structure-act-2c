@@ -104,7 +104,7 @@ public class sample3 extends javax.swing.JFrame {
         
         int difference = num1 - num2;
         
-        JOptionPane.showMessageDialog(null,"The quotient is:" + difference,"ACT2C", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null,"The Different is:" + difference,"ACT2C", JOptionPane.ERROR_MESSAGE);
         
     }//GEN-LAST:event_jButton5ActionPerformed
 

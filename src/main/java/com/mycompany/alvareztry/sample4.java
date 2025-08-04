@@ -124,7 +124,7 @@ public class sample4 extends javax.swing.JFrame {
         
         int product = num1 * num2;
         
-        JOptionPane.showMessageDialog(null,"The quotient is:" + product,"ACT2C", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null,"The Product is:" + product,"ACT2C", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
