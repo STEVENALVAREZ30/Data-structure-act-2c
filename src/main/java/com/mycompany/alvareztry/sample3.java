@@ -4,6 +4,8 @@
  */
 package com.mycompany.alvareztry;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author CL3~PC04
@@ -87,7 +89,8 @@ public class sample3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        new sample4().show(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -99,7 +102,9 @@ public class sample3 extends javax.swing.JFrame {
         int num1 = Integer.parseInt(txtnum1.getText());
         int num2 = Integer.parseInt(txtnum2.getText());
         
-        int diff = num1 - num2;
+        int difference = num1 - num2;
+        
+        JOptionPane.showMessageDialog(null,"The quotient is:" + difference,"ACT2C", JOptionPane.ERROR_MESSAGE);
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
