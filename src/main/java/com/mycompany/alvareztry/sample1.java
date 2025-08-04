@@ -32,10 +32,8 @@ public class sample1 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtnum1 = new javax.swing.JTextField();
         txtnum2 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        add2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        add3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,37 +58,21 @@ public class sample1 extends javax.swing.JFrame {
         });
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 170, 40));
 
-        jButton2.setText("DIVISION");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        add3.setText("ADD");
+        add3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                add3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 130, 110));
+        getContentPane().add(add3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 120, 30));
 
-        add2.setText("ADD");
-        add2.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("BACK TO INDEX");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add2ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(add2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 120, 50));
-
-        jButton3.setText("MULTIPLICATION");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 140, 110));
-
-        jButton4.setText("SUBTRACTION");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 130, 110));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 120, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -99,33 +81,18 @@ public class sample1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnum1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       this.dispose();
-       new sample2().show(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void add2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add2ActionPerformed
-        int num1 = Integer.parseInt(txtnum1.getText());
-        int num2 = Integer.parseInt(txtnum2.getText());
-        
-        int sum = num1 + num2;
-        
-        JOptionPane.showMessageDialog(null,"The sum is:" + sum,"ACT2C", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_add2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       this.dispose();
-        new sample4().show(true); // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-      this.dispose();
-        new sample3().show(true);  // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void txtnum2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnum2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnum2ActionPerformed
+
+    private void add3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_add3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+        new index().show(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,10 +130,8 @@ public class sample1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton add2;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton add3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField txtnum1;

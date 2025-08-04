@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author CL3~PC04
  */
-public class sample3 extends javax.swing.JFrame {
+public class if_condition extends javax.swing.JFrame {
 
     /**
-     * Creates new form sample3
+     * Creates new form if_condition
      */
-    public sample3() {
+    public if_condition() {
         initComponents();
     }
 
@@ -28,50 +28,37 @@ public class sample3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        txtnum2 = new javax.swing.JTextField();
-        txtnum1 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
+        txt = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 130, 40));
 
-        jLabel3.setText("NUMBER 2");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 90, 30));
-
-        jLabel4.setText("NUMBER 1");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 30));
-        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 160, 40));
-        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 160, 40));
-
-        jButton6.setText("SUBTRACTION");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
-
-        jButton1.setText("BACK TO INDEX");
+        jButton1.setText("verify");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 120, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 100, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.dispose();
-        new index().show(true);
+        int age = Integer.parseInt(txt.getText());
+        if(age > 18 && age <= 100)
+        {
+         JOptionPane.showMessageDialog(null, "Able to Vote", "VOTING", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if (age <= 17 && age >= 5 ){
+            JOptionPane.showMessageDialog(null, "Unable to Vote", "VOTING", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else {
+            JOptionPane.showMessageDialog(null, "invalid input", "VOTING", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -91,30 +78,26 @@ public class sample3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(sample3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(if_condition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(sample3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(if_condition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(sample3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(if_condition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(sample3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(if_condition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new sample3().setVisible(true);
+                new if_condition().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField txtnum1;
-    private javax.swing.JTextField txtnum2;
+    private javax.swing.JTextField txt;
     // End of variables declaration//GEN-END:variables
 }
